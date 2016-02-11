@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Nick's Claims Map</h1>
+          <p>Click the buttons to zoom in on some of my claims.</p>
+          <button class="btn btn-success btn-xlarge" id="vancouver" href="#">Vancouver</button>   
+      </div>
+
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+          <button class="btn btn-primary btn-large" id="pavillion" href="#">Pavillion</button>
+          <button class="btn btn-primary btn-large" id="granite" href="#">Granite</button>
+          <button class="btn btn-primary btn-large" id="weaver" href="#">Weaver</button>
+          <button class="btn btn-primary btn-large" id="salmo" href="#">Salmo</button>
+          <button class="btn btn-primary btn-large" id="hedley" href="#">Hedley</button>
+        </div>
+        <div class="col-md-10" id="map" ></div>
+    </div>
+  </div>
+
+  <script src="application.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYF6zDtXW5rER11d4b8M71dD10rskCt6Y&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
+
+  </body>
+</html>
